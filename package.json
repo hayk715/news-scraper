@@ -1,0 +1,23 @@
+{
+  "name": "news-scrape-master",
+  "version": "1.0.0",
+  "description": "This is a Node/Express/Mongo app using Mongoose, Handlebars, and Bootstrap that scrapes news.ycombinator.com and allows users to: `dismiss an article`, `save an article`, `add a note to a saved article`, `delete a note`, and `delete a saved article`.",
+  "main": "server.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.3.1",
+    "mongoose-unique-validator": "^2.0.2",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
