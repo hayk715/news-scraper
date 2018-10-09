@@ -104,7 +104,7 @@ router.get('/scrape', function(req, res, next) {
     request('https://www.foxnews.com//', function(error, response, html) {
         let $ = cheerio.load(html);
         let results = [];
-        $('.title').each(function(i, e) {
+        $('article h2').each(function(i, e) {
             let title = $(this).children('a').text(),
                 link = $(this).children('a').attr('href'),
                 single = {};
