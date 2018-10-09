@@ -68,7 +68,7 @@ router.post('/save/:id', function(req, res) {
         });
 });
 
-// dismiss article
+// remove article
 router.delete('/dismiss/:id', function(req, res) {
     Article.findByIdAndUpdate(req.params.id,
         { $set: { deleted: true } },
